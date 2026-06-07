@@ -48,7 +48,20 @@ Underneath, you will find the control board with the two buttons and the microph
 
 ![Original control board with buttons and microphone](pics/PIC5.jpg)
 
-In this guide I am not focusing on restoring the original button and microphone functions, but for anyone who wants to do that, it is not too complicated.
+### Optional step — Keep the original buttons
+
+If you want to keep the original button functions, the simplest way is to remove the original IC from the board and wire the two button pins directly to the ESP32.
+
+Button 1 is on **pin 3** and Button 2 is on **pin 4**.
+
+![Original button pins on the control board](pics/Wiring1.jpeg)
+
+Wire the buttons to the ESP32 like this:
+
+- **Button 1 / pin 3** -> **GPIO 0**
+- **Button 2 / pin 4** -> **GPIO 1**
+
+![Button wiring to the ESP32](pics/Wiring2.jpeg)
 
 ### Step 4 — Install the ESP32
 
@@ -73,6 +86,13 @@ In WLED, set:
 - **LED type:** `WS281x`
 
 Save the configuration and test a few colors to confirm everything is working.
+
+If you connected the original buttons, also configure:
+
+- **Button 1:** `GPIO 0`
+- **Button 2:** `GPIO 1`
+
+![WLED button configuration](pics/WledButtonsConfig.jpg)
 
 ### Step 6 — Reassemble
 
