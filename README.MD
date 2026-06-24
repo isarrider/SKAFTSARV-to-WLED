@@ -72,7 +72,10 @@ Connect the wires as follows:
 - **White** to **5V**
 - **Brown** to **GPIO 2** for data
 
-### Step 5 — Configure WLED
+### Step 5 — Install and configure WLED
+
+Install WLED:
+https://install.wled.me/
 
 In WLED, set:
 
