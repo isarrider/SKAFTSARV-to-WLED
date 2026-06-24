@@ -72,6 +72,10 @@ Connect the wires as follows:
 - **White** to **5V**
 - **Brown** to **GPIO 2** for data
 
+Glue it well as the pcb has to hold when you plugin the cable
+
+![Glued](pics/pic_14.jpg)
+
 ### Step 5 — Install and configure WLED
 
 Install WLED:
